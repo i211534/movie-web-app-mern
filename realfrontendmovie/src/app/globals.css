@@ -1,0 +1,410 @@
+/* src/app/globals.css */
+
+/* Root variables */
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+ 
+  font-family: Arial, sans-serif;
+  background-color: #060D17;
+  color: rgb(0, 0, 0);
+}
+
+.header {
+  display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 20px;
+          background-color: #1E1E1E;
+          margin-right:10px;
+          color: white;
+          position: relative;
+          z-index: 500;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 1100; /* Ensure it is above other elements */
+}
+
+
+
+.text-balance {
+  text-wrap: balance;
+}
+
+
+
+.logo {
+  font-size: 24px;
+          font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  text-decoration: none; 
+}
+.nav-links a, .nav-links button {
+  color: #fff; /* Set text color to white */
+  text-decoration: none; /* Remove underline */
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.nav-links li {
+  cursor: pointer;
+  color : #EAEAEC;
+  transition: color 0.3s;
+}
+
+.nav-links li:hover {
+  color: #e50914;
+}
+
+/* src/app/styles/components/AuthForm.css */
+
+.auth-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color:#060D17;
+
+
+}
+.auth-form .form-groupauth input{
+width: 100%;
+padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  margin-top:10px;
+} 
+
+
+
+.dropdown-menu button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+.dropdown-menu button:hover {
+  background-color: #555;
+}
+
+
+
+.home-page Header{
+
+width: 100%;
+}
+
+.profile-page Header{
+ 
+width: 100%;
+}
+
+.form-group label {
+  color: white;
+  margin-left: 10px;
+  display: block;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input {
+  margin-left: 10px;
+  width: 25%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+
+.submit-button {
+  
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #EAEAEC;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  margin-top: 1rem;
+  color : #EAEAEC;
+
+  font-weight: bold;
+ 
+}
+
+.auth-page Header{
+  width : 100%;
+}
+
+.authpagereal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color : #EAEAEC;
+  padding: 2rem;
+}
+
+.auth-page h1 {
+  color :  #EAEAEC;
+  margin-top: 100px;
+  margin-bottom: 1rem;
+}
+.signup-link {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.signup-link a {
+  color: #0070f3; /* Change this color to whatever you prefer */
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Movie Page section styles */
+
+.movie-page {
+  padding: 20px;
+}
+
+.movie-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.image-display-real {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.recommendedimagereal {
+  width: 300px;
+  height: auto;
+}
+
+.rating-below-image {
+  margin-top: 10px;
+}
+
+.movie-details {
+  flex: 1 1 auto;
+}
+
+
+
+/* Movie List section styles */
+
+.movie-list {
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 1;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.carousel-col {
+  flex: 1;
+  cursor: pointer;
+  max-width: 33.3333%; /* 3 items in one row */
+  box-sizing: border-box;
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.movies-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.movie-item {
+  width: 250px;
+  cursor: pointer;
+  text-align: center;
+  color: #eaeaec;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+.movie-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.movie-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.no-movies {
+  color: #eaeaec;
+}
+/* src/app/styles/components/MovieCategories.css */
+.categories {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+  
+   /* Increase margin for more space around the component */
+  padding: 1rem; /* Add padding to increase the size of the component */
+  background-color: #141414;/* Optional: add a background color for better visibility */
+  border-radius: 8px; /* Optional: add border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for a subtle effect */
+}
+
+.categories-list {
+  display: flex;
+  list-style: none;
+  color : #EAEAEC;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.category-header {
+  color : #EAEAEC;
+  font-weight: bold;
+  margin-right: 1.5rem; /* Increase spacing between header and categories */
+  font-size: 1.5rem; /* Increase font size */
+}
+
+.category {
+  margin-right: 1.5rem; /* Increase spacing between categories */
+  cursor: pointer;
+  font-size: 1.5rem; /* Increase font size */
+}
+
+.category:hover {
+  text-decoration: underline;
+}
+
+/*Recommend Movies*/
+.image-display-real{
+  width: 250px; /* Set a fixed width for each movie item */
+  margin-bottom: 2rem; /* Adjust spacing between items */
+  padding: 1rem;
+
+  color: #eaeaec;
+  border-radius: 4px;
+ 
+}
+.recommendedimagereal{
+  width: 100%; /* Ensures images fill their container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 4px;
+}
+.recommendmoviemainheading {
+  display: flex;
+  justify-content: center;
+  color : #EAEAEC;
+  align-items: center;
+  /* Additional styles as needed */
+}
+.recommendation-components {
+  display: flex;
+  color : #EAEAEC;
+  flex-direction: column; /* Arrange components vertically */
+  align-items: center; /* Center horizontally */
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+/*CHAT WINDOW STYLES*/
+
