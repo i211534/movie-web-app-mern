@@ -142,6 +142,12 @@ npm start
 - `GET /api/movies/genre/:genre` - Get movies by genre
 - `POST /api/movies/:id/rate` - Rate a movie
 
+### Additional Features
+
+![image](https://github.com/user-attachments/assets/69915747-194c-4fc2-bf58-01a7db5ff67c)
+
+![image](https://github.com/user-attachments/assets/314dadc2-4176-417f-84e2-dac4cbc8595c)
+
 ## Future Enhancements
 
 - Watchlist functionality
