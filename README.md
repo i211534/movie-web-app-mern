@@ -129,6 +129,8 @@ npm start
 
 ![image](https://github.com/user-attachments/assets/314dadc2-4176-417f-84e2-dac4cbc8595c)
 
+![image](https://github.com/user-attachments/assets/f6e0b718-dd39-4f24-a0fc-d93544ed2496)
+
 ## Future Enhancements
 
 - Watchlist functionality
